@@ -1,0 +1,41 @@
+Background
+
+One of Tim Berners-Lee's inventions in his 1989 CERN paper is the Uniform Resource Locator (URL), still used today to access websites. URLs typically use the following pattern:
+
+Protocol (e.g. "http") +
+
+"://" +
+
+domain name (e.g. "www.example.com") +
+
+filename (e.g., "index.html")
+
+= http://www.example.com/index.html (Links to an external site.).
+
+A "Fully Qualified Domain Name" (FQDN) is one that specifies all domain levels, including at least the second-level domain (e.g., "example") and the top-level domain (e.g., "com").
+
+Top-level domains are administered by the Internet Corporation for Assigned Names and Numbers (ICANN), which approves new top-level domains. Early on in the web's history, there were few top-level domains. Now there are many top-level domains, several of which you are likely familiar with, for example: .com, .edu, .org, .net, .in, .cn, .co.uk, .io, and .ly.
+
+There are six second-level domains that ICANN reserves for special uses for each top-level domain: example, invalid, local, localhost, onion, and test. What this means is that websites such as example.com, example.in, and example.cn are reserved pages that are not for general use. Try visiting them in your browser. What do you see?
+
+All of the top-level domains have been conveniently compiled into a list on Wikipedia: https://en.m.wikipedia.org/wiki/List_of_Internet_top-level_domains (Links to an external site.)
+
+Goal
+
+In this assignment, you will write a program that scapes the Wikipedia list of top-level domains and writes a CSV file that contains all the top-level domains and whether their "example" second-level domain resolves to an address that returns an HTTP responses.
+
+Step 1
+
+Use the Requests module to download the page with the list of top-level domains.
+
+Step 2
+
+Use BeautifulSoup, regular expressions, or some other means to extract the relevant domains.
+
+Step 3
+
+Use the Requests package to check whether the "example" second-level domain is valid for each of the top-level domains you extracted.
+
+Step 4
+
+Write a CSV file (https://docs.python.org/3/library/csv.html (Links to an external site.)) with the results.
