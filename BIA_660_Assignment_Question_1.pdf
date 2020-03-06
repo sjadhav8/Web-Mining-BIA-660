@@ -1,0 +1,19 @@
+Step 1
+
+Create a GitHub account (if you do not already have one) at https://github.com/ (Links to an external site.).
+
+Step 2
+
+Write a Python 3 program that uses the Requests module to make the following HTTP requests:
+
+A: A Google search for the term "Tim Berners-Lee".
+
+B: A POST request to a website that does not accept POST requests.
+
+C: A request to a URL that does not exist.
+
+For each request, your program must print:
+
+The content ("body") of the response
+The status code of the response
+The response headers
