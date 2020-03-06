@@ -1,0 +1,13 @@
+In this assignment, you will crawl the Stevens website looking for Stevens email addresses, creating a text file with one email address per line, while also storing all the page you visit. Upload the list of email addresses.
+
+Your crawler should:
+
+1. Make use of the Requests module, Selenium, BeautifulSoup, and regular expressions. 
+
+2. Start the search with the seed https://www.stevens.edu/ (Links to an external site.).
+
+3. Save all visited pages to disk using a directory structure that reflectes the hierarchy in the URL. (For example, the page https://www.stevens.edu/school-business/faculty/ (Links to an external site.) should appear as a file in a directory named "faculty" within a directory name2 "school-business" within a directory named "root" or "www.stevens.edu (Links to an external site.)". You'll probably want to use Python's os module (https://docs.python.org/3/library/os.path.html (Links to an external site.)) and and urllib.parse module (https://docs.python.org/3/library/urllib.parse.html (Links to an external site.)) to accomplish this. You'll also need to read and write files (https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files (Links to an external site.)).
+
+4. Avoid visiting any page more than once. You'll need some way to store the URLs of the pages that have been visited thus far.
+
+5. Obey the robots.txt file, https://docs.python.org/3/library/urllib.robotparser.html, (Links to an external site.) except that you may set your crawl delay to less than 10 seconds. (However, you should add some crawl delay, however short.)
